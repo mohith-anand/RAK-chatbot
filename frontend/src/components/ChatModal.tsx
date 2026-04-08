@@ -15,7 +15,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "model",
-      text: "Welcome to the digital showroom. I am the Curator advisor. How may I assist your architectural sourcing today?",
+      text: "Welcome! I’ll help you choose tiles that fit your space perfectly—from style and size to finish and everything in between. Where would you like to start?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -219,7 +219,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
                   <div className="w-3 h-3 rounded-full bg-gold/40" />
                 </div>
                 <span className="font-jost text-[11px] tracking-[0.4em] uppercase text-gold font-bold ml-4">
-                  Digital Curator Terminal
+                  Tile Advisor
                 </span>
               </div>
               <button
@@ -240,7 +240,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
                         "w-12 h-12 shrink-0 flex items-center justify-center font-headline text-2xl border border-gold/20",
                         msg.role === "model" ? "bg-charcoal text-gold" : "bg-gold text-charcoal"
                       )}>
-                        {msg.role === "model" ? "S" : "U"}
+                        {msg.role === "model" ? "🤖" : "👤"}
                       </div>
                       <div className="space-y-3">
                         <div className="font-body text-base md:text-lg text-white/90 leading-relaxed font-light prose prose-invert prose-gold max-w-none">
@@ -322,12 +322,25 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
                               </div>
                             </div>
 
-                            <button
-                              onClick={() => setGuidedIndex(null)}
-                              className="text-[9px] font-jost uppercase tracking-widest text-white/30 hover:text-gold transition-colors underline underline-offset-4 decoration-white/10"
-                            >
-                              Skip discovery and type your wish
-                            </button>
+                            <div className="flex items-center gap-6">
+                              {guidedIndex > 0 && (
+                                <button
+                                  onClick={() => setGuidedIndex(guidedIndex - 1)}
+                                  className="text-[9px] font-jost uppercase tracking-widest text-white/30 hover:text-gold transition-colors underline underline-offset-4 decoration-white/10"
+                                >
+                                  ← Go Back
+                                </button>
+                              )}
+                              <button
+                                onClick={() => {
+                                  setGuidedIndex(0);
+                                  setGuidedSelections({});
+                                }}
+                                className="text-[9px] font-jost uppercase tracking-widest text-white/30 hover:text-gold transition-colors underline underline-offset-4 decoration-white/10"
+                              >
+                                Clear Selection & Start Over
+                              </button>
+                            </div>
                           </div>
                         )}
                         <span className="block text-[10px] tracking-[0.3em] text-gold font-bold uppercase opacity-60">
@@ -338,7 +351,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
                   ))}
                   {isLoading && (
                     <div className="flex gap-8 max-w-4xl animate-pulse">
-                      <div className="w-12 h-12 bg-charcoal shrink-0 flex items-center justify-center font-headline text-gold text-2xl border border-gold/20">S</div>
+                      <div className="w-12 h-12 bg-charcoal shrink-0 flex items-center justify-center font-headline text-gold text-2xl border border-gold/20">🤖</div>
                       <div className="space-y-2">
                         <div className="h-4 w-48 bg-gold/20" />
                         <div className="h-4 w-32 bg-gold/20" />
