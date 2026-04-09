@@ -97,7 +97,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
       console.error("Chat Error:", error);
       setMessages((prev) => [
         ...prev,
-        { role: "model", text: "I apologize, but I'm having a bit of trouble connecting to our digital showroom right now. Please try again in a moment, or feel free to browse our collections above." },
+        { role: "model", text: "I apologize, but I'm having a bit of trouble connecting to our digital showroom right now. Please try again in a moment." },
       ]);
     } finally {
       setIsLoading(false);
@@ -261,7 +261,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
                                       alt={tile.series_name}
                                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                       onError={(e) => {
-                                        (e.target as HTMLImageElement).src = "https://placehold.co/600x400/1a1a1a/c5a358?text=Tile+Preview";
+                                        (e.target as HTMLImageElement).src = "/images/tile-placeholder.png";
                                       }}
                                     />
                                   </div>
@@ -432,7 +432,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
                         alt={selectedTilesList[selectedTileIndex].series_name}
                         className="w-full h-full object-cover"
                         onError={(e) => {
-                          e.currentTarget.src = "https://placehold.co/600x600/1a1a1a/c5a358?text=Placeholder";
+                          e.currentTarget.src = "/images/tile-placeholder.png";
                         }}
                       />
 
