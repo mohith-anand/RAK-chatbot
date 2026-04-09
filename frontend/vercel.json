@@ -1,4 +1,3 @@
-# Vercel SPA routing: redirect all paths to index.html
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
