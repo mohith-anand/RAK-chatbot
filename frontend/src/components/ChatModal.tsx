@@ -97,7 +97,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
       console.error("Chat Error:", error);
       setMessages((prev) => [
         ...prev,
-        { role: "model", text: "I'm sorry, I'm having trouble connecting to the showroom database. Please ensure the backend is running." },
+        { role: "model", text: "I apologize, but I'm having a bit of trouble connecting to our digital showroom right now. Please try again in a moment, or feel free to browse our collections above." },
       ]);
     } finally {
       setIsLoading(false);
@@ -187,7 +187,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
         ]);
       } catch (err) {
         console.error("Guided Submission Error:", err);
-        setMessages((prev) => [...prev, { role: "model", text: "I encountered an error processing your guided selection. Please try typing your request." }]);
+        setMessages((prev) => [...prev, { role: "model", text: "I apologize, but I encountered a slight issue while processing your selection. Could you please try typing your request instead? I'm here to help." }]);
       } finally {
         setIsLoading(false);
       }

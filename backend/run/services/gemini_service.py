@@ -104,4 +104,7 @@ Rules:
 
     except Exception as e:
         print("Gemini Error:", str(e))
-        return f"Gemini generation failed: {str(e)}"
+        return {
+            "ai_summary": "I apologize, but I'm having a bit of trouble generating a detailed recommendation right now. However, I have found some tiles below that match your criteria.",
+            "recommended_tiles": []
+        }
