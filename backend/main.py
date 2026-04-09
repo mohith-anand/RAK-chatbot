@@ -14,13 +14,18 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Add CORS Middleware
+# Allowed origins — set ALLOWED_ORIGINS in your environment (comma-separated).
+# Example: ALLOWED_ORIGINS=https://your-app.vercel.app
+# Falls back to localhost only for local development.
+_raw_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://localhost:5173")
+allowed_origins = [o.strip() for o in _raw_origins.split(",") if o.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["POST", "GET", "OPTIONS"],
+    allow_headers=["Content-Type"],
 )
 
 # It is good practice to add a prefix so your URL is /api/search

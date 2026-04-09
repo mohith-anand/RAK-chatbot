@@ -7,6 +7,7 @@ backend/.env
 .env.production.local
 .env*
 !.env.example
+!frontend/.env.production
 
 # API keys and secrets
 *.key
@@ -38,14 +39,20 @@ backend/venv/
 backend/env/
 .venv
 
-# Chroma Vector DB
-backend/data/vector_db/
+# Chroma Vector DB — committed to repo so Docker image can bundle it
+# backend/data/vector_db/   <-- intentionally NOT excluded for deployment
 backend/run/data/vector_db/
 backend/scripts/chroma_db/
 
 # Scratch & Temporary
 tmp/
 *.log
+
+# Generated evaluation output — contains internal scoring data
+backend/scripts/eval_results.json
+
+# Raw source data — large Excel files, not needed in repo
+backend/data/raw_excel/
 
 # Node & Frontend
 node_modules/

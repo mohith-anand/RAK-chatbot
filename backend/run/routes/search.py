@@ -1,14 +1,14 @@
 from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from run.services.product_search_service import search_tiles
 from run.services.gemini_service import generate_tile_response
 
 router = APIRouter()
 
 class SearchRequest(BaseModel):
-    query: str
-    history: list = []
-    n_results: int = 5
+    query: str = Field(..., min_length=1, max_length=500)
+    history: list = Field(default=[], max_length=20)
+    n_results: int = Field(default=5, ge=1, le=20)
 
 @router.post("/search")
 def search_products(request: SearchRequest):
@@ -34,4 +34,6 @@ def search_products(request: SearchRequest):
             "results": results
         }
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}")
+        # Log internally but do not expose raw exception details to the client
+        print(f"[ERROR] /api/search failed: {str(e)}")
+        raise HTTPException(status_code=500, detail="An internal error occurred. Please try again later.")

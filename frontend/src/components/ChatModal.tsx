@@ -6,6 +6,8 @@ import { searchTiles } from "../lib/api";
 import { cn } from "@/src/lib/utils";
 import { Message, Tile } from "@/src/types";
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
 interface ChatModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -255,7 +257,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
                                 {tile.image_path && (
                                   <div className="aspect-[4/3] overflow-hidden bg-charcoal">
                                     <img
-                                      src={`http://localhost:8000/images/${tile.image_path}`}
+                                      src={`${API_BASE_URL}/images/${tile.image_path}`}
                                       alt={tile.series_name}
                                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                       onError={(e) => {
@@ -426,7 +428,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
                     {/* Hero Image */}
                     <div className="relative group aspect-square bg-black/40 border border-gold/10 overflow-hidden">
                       <img
-                        src={`http://localhost:8000/images/${selectedTilesList[selectedTileIndex].image_path}`}
+                        src={`${API_BASE_URL}/images/${selectedTilesList[selectedTileIndex].image_path}`}
                         alt={selectedTilesList[selectedTileIndex].series_name}
                         className="w-full h-full object-cover"
                         onError={(e) => {
