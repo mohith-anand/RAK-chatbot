@@ -1,0 +1,1378 @@
+{
+  "summary": {
+    "total_queries": 20,
+    "k": 3,
+    "collection_size": 547,
+    "base_precision": 0.8333,
+    "rerank_precision": 0.9167,
+    "precision_lift": 0.0833,
+    "base_mrr": 0.95,
+    "rerank_mrr": 0.95,
+    "mrr_lift": 0.0,
+    "base_map": 0.8278,
+    "rerank_map": 0.9167,
+    "diversity_score": 0.8667
+  },
+  "per_query": [
+    {
+      "query": "marble tiles for living room",
+      "label": "Material: Marble",
+      "base_top3": [
+        {
+          "sku": "A05GCCAF-CTA.N0X0P",
+          "series": "calacatta africa",
+          "category": "marble",
+          "surface": "polished",
+          "color": "calacatta",
+          "base_score": 0.7433
+        },
+        {
+          "sku": "A22GZNTV-IVO.N0X5P",
+          "series": "new travertino",
+          "category": "stone",
+          "surface": "polished",
+          "color": "ivory",
+          "base_score": 0.7223
+        },
+        {
+          "sku": "A05GCHLX-IVO.N0X0P",
+          "series": "chrome lux",
+          "category": "marble",
+          "surface": "polished",
+          "color": "ivory",
+          "base_score": 0.7202
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A05GCCAF-CTA.N0X0P",
+          "series": "Calacatta Africa",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Calacatta",
+          "base_score": 0.7433,
+          "final_score": 2.0933
+        },
+        {
+          "sku": "A05GCHLX-IVO.N0X0P",
+          "series": "Chrome Lux",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Ivory",
+          "base_score": 0.7202,
+          "final_score": 2.0702
+        },
+        {
+          "sku": "A05GAMTT-BEE.N0X0P",
+          "series": "Amber Travert",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Beige",
+          "base_score": 0.7167,
+          "final_score": 2.0667
+        }
+      ],
+      "metrics": {
+        "base_precision": 0.6666666666666666,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 0.5555555555555555,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "concrete look tiles for kitchen",
+      "label": "Material: Concrete",
+      "base_top3": [
+        {
+          "sku": "A06GZRCC-CCG.M2L",
+          "series": "revive concrete",
+          "category": "concrete",
+          "surface": "lappato",
+          "color": "concrete grey",
+          "base_score": 0.7431
+        },
+        {
+          "sku": "A06GZRCC-CCG.M2R",
+          "series": "revive concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "concrete grey",
+          "base_score": 0.7402
+        },
+        {
+          "sku": "A05GZRCC-CRG.M6X0R",
+          "series": "revive concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "concrete grey",
+          "base_score": 0.7387
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A06GZRCC-CCG.M2L",
+          "series": "Revive Concrete",
+          "category": "Concrete",
+          "surface": "Lappato",
+          "color": "Concrete Grey",
+          "base_score": 0.7431,
+          "final_score": 2.0931
+        },
+        {
+          "sku": "A06GZRCC-CCG.M2R",
+          "series": "Revive Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Concrete Grey",
+          "base_score": 0.7402,
+          "final_score": 2.0902
+        },
+        {
+          "sku": "A06GZSUR-CGY.M0L",
+          "series": "Surface 2.0",
+          "category": "Concrete",
+          "surface": "Lappato",
+          "color": "Cool Grey",
+          "base_score": 0.7079,
+          "final_score": 2.0579
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 0.6666666666666666
+      }
+    },
+    {
+      "query": "wood effect tiles for bedroom",
+      "label": "Material: Wood",
+      "base_top3": [
+        {
+          "sku": "AGX2HSEWDOAKZMHS5R",
+          "series": "select wood",
+          "category": "wood",
+          "surface": "matt",
+          "color": "oak",
+          "base_score": 0.7294
+        },
+        {
+          "sku": "A99GZCRW#BR0.W2S5R",
+          "series": "circle wood",
+          "category": "wood",
+          "surface": "matt",
+          "color": "brown",
+          "base_score": 0.7204
+        },
+        {
+          "sku": "A99GZHRD#BR0.W2S5R",
+          "series": "hard wood",
+          "category": "wood",
+          "surface": "matt",
+          "color": "brown",
+          "base_score": 0.7204
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "AGX2HSEWDOAKZMHS5R",
+          "series": "Select Wood",
+          "category": "Wood",
+          "surface": "Matt",
+          "color": "Oak",
+          "base_score": 0.7294,
+          "final_score": 2.0794
+        },
+        {
+          "sku": "A99GZCRW#BR0.W2S5R",
+          "series": "Circle Wood",
+          "category": "Wood",
+          "surface": "Matt",
+          "color": "Brown",
+          "base_score": 0.7204,
+          "final_score": 2.0704
+        },
+        {
+          "sku": "A99GZHRD#BR0.W2S5R",
+          "series": "Hard Wood",
+          "category": "Wood",
+          "surface": "Matt",
+          "color": "Brown",
+          "base_score": 0.7204,
+          "final_score": 2.0704
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "stone finish tiles for bathroom",
+      "label": "Material: Stone",
+      "base_top3": [
+        {
+          "sku": "A05GTBUR-SIR.M0X0R",
+          "series": "tibur baalbek",
+          "category": "stone",
+          "surface": "matt",
+          "color": "silver",
+          "base_score": 0.6976
+        },
+        {
+          "sku": "A12GMIMS-RST.M0X5R",
+          "series": "mimesis",
+          "category": "metal",
+          "surface": "matt",
+          "color": "rust",
+          "base_score": 0.6967
+        },
+        {
+          "sku": "A12GMIMS-RST.MGX5R",
+          "series": "mimesis decor",
+          "category": "metal",
+          "surface": "matt",
+          "color": "rust",
+          "base_score": 0.6967
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A05GTBUR-SIR.M0X0R",
+          "series": "Tibur Baalbek",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Silver",
+          "base_score": 0.6976,
+          "final_score": 2.0476
+        },
+        {
+          "sku": "A06GCYSE-BEE.A6X0R",
+          "series": "Clay Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.6945,
+          "final_score": 2.0445
+        },
+        {
+          "sku": "A06GCLNA-BEE.A6X0R",
+          "series": "Coral Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.6945,
+          "final_score": 2.0445
+        }
+      ],
+      "metrics": {
+        "base_precision": 0.3333333333333333,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 0.3333333333333333,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "polished floor tiles",
+      "label": "Finish: Polished",
+      "base_top3": [
+        {
+          "sku": "A05GCCAF-CTA.N0X0P",
+          "series": "calacatta africa",
+          "category": "marble",
+          "surface": "polished",
+          "color": "calacatta",
+          "base_score": 0.7583
+        },
+        {
+          "sku": "A05GCHLX-IVO.N0X0P",
+          "series": "chrome lux",
+          "category": "marble",
+          "surface": "polished",
+          "color": "ivory",
+          "base_score": 0.7556
+        },
+        {
+          "sku": "A05GAMTT-BEE.N0X0P",
+          "series": "amber travert",
+          "category": "marble",
+          "surface": "polished",
+          "color": "beige",
+          "base_score": 0.7541
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A05GCCAF-CTA.N0X0P",
+          "series": "Calacatta Africa",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Calacatta",
+          "base_score": 0.7583,
+          "final_score": 1.2583
+        },
+        {
+          "sku": "A05GCHLX-IVO.N0X0P",
+          "series": "Chrome Lux",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Ivory",
+          "base_score": 0.7556,
+          "final_score": 1.2556
+        },
+        {
+          "sku": "A05GAMTT-BEE.N0X0P",
+          "series": "Amber Travert",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Beige",
+          "base_score": 0.7541,
+          "final_score": 1.2541
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "matte tiles for bathroom wall",
+      "label": "Finish: Matte",
+      "base_top3": [
+        {
+          "sku": "A09GZSUR-CL0.M0R",
+          "series": "surface 2.0",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "clay",
+          "base_score": 0.738
+        },
+        {
+          "sku": "A05GCHCS-GRY.A0X0R",
+          "series": "chianca stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "grey",
+          "base_score": 0.737
+        },
+        {
+          "sku": "A06GZDCC-WH0.M2R",
+          "series": "design concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "white",
+          "base_score": 0.7369
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A09GZSUR-CL0.M0R",
+          "series": "Surface 2.0",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Clay",
+          "base_score": 0.738,
+          "final_score": 1.138
+        },
+        {
+          "sku": "A05GCHCS-GRY.A0X0R",
+          "series": "Chianca Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Grey",
+          "base_score": 0.737,
+          "final_score": 1.137
+        },
+        {
+          "sku": "A06GZDCC-WH0.M2R",
+          "series": "Design Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "White",
+          "base_score": 0.7369,
+          "final_score": 1.1369
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "white tiles for bathroom",
+      "label": "Color: White",
+      "base_top3": [
+        {
+          "sku": "A05GRIOC-WHE.M6X0R",
+          "series": "calacatta rio",
+          "category": "marble",
+          "surface": "matt",
+          "color": "white",
+          "base_score": 0.769
+        },
+        {
+          "sku": "A05GCYSE-WHE.M6X0R",
+          "series": "clay stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "white",
+          "base_score": 0.769
+        },
+        {
+          "sku": "A05GKSON-WHE.M6X0R",
+          "series": "k2 stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "white",
+          "base_score": 0.769
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A05GRIOC-WHE.M6X0R",
+          "series": "Calacatta Rio",
+          "category": "Marble",
+          "surface": "Matt",
+          "color": "White",
+          "base_score": 0.769,
+          "final_score": 1.269
+        },
+        {
+          "sku": "A05GCYSE-WHE.M6X0R",
+          "series": "Clay Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "White",
+          "base_score": 0.769,
+          "final_score": 1.269
+        },
+        {
+          "sku": "A05GKSON-WHE.M6X0R",
+          "series": "K2 Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "White",
+          "base_score": 0.769,
+          "final_score": 1.269
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "grey floor tiles for living room",
+      "label": "Color: Grey",
+      "base_top3": [
+        {
+          "sku": "A22GZCRR-GRY.M0X5R",
+          "series": "carara",
+          "category": "marble",
+          "surface": "matt",
+          "color": "grey",
+          "base_score": 0.7638
+        },
+        {
+          "sku": "A22GMLST-GRY.M0X5R",
+          "series": "milano stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "grey",
+          "base_score": 0.7638
+        },
+        {
+          "sku": "A05GASHA-GRY.M0X0R",
+          "series": "ashtra",
+          "category": "stone",
+          "surface": "matt",
+          "color": "grey",
+          "base_score": 0.7613
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A22GZCRR-GRY.M0X5R",
+          "series": "Carara",
+          "category": "Marble",
+          "surface": "Matt",
+          "color": "Grey",
+          "base_score": 0.7638,
+          "final_score": 1.2638
+        },
+        {
+          "sku": "A22GMLST-GRY.M0X5R",
+          "series": "Milano Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Grey",
+          "base_score": 0.7638,
+          "final_score": 1.2638
+        },
+        {
+          "sku": "A05GASHA-GRY.M0X0R",
+          "series": "Ashtra",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Grey",
+          "base_score": 0.7613,
+          "final_score": 1.2613
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "black tiles for feature wall",
+      "label": "Color: Black/Dark",
+      "base_top3": [
+        {
+          "sku": "A12GKSON-BLK.A6X5R",
+          "series": "k2 stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "black",
+          "base_score": 0.7814
+        },
+        {
+          "sku": "A06GKSON-BLK.A6X0R",
+          "series": "k2 stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "black",
+          "base_score": 0.78
+        },
+        {
+          "sku": "A12GELLM-BLK.N0X5P",
+          "series": "elle marble",
+          "category": "marble",
+          "surface": "polished",
+          "color": "black",
+          "base_score": 0.7799
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A12GKSON-BLK.A6X5R",
+          "series": "K2 Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Black",
+          "base_score": 0.7814,
+          "final_score": 1.2814
+        },
+        {
+          "sku": "A06GKSON-BLK.A6X0R",
+          "series": "K2 Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Black",
+          "base_score": 0.78,
+          "final_score": 1.28
+        },
+        {
+          "sku": "A12GELLM-BLK.N0X5P",
+          "series": "Elle Marble",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Black",
+          "base_score": 0.7799,
+          "final_score": 1.2799
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 0.6666666666666666
+      }
+    },
+    {
+      "query": "beige tiles for bedroom floor",
+      "label": "Color: Beige/Warm",
+      "base_top3": [
+        {
+          "sku": "A05GASHA-BEE.M0X0R",
+          "series": "ashtra",
+          "category": "stone",
+          "surface": "matt",
+          "color": "beige",
+          "base_score": 0.7721
+        },
+        {
+          "sku": "A05GBTTL-BEE.M0X0R",
+          "series": "battle stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "beige",
+          "base_score": 0.7721
+        },
+        {
+          "sku": "A06GZBSC-BE0.M2R",
+          "series": "basic concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "beige",
+          "base_score": 0.768
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A05GASHA-BEE.M0X0R",
+          "series": "Ashtra",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.7721,
+          "final_score": 1.2721
+        },
+        {
+          "sku": "A05GBTTL-BEE.M0X0R",
+          "series": "Battle Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.7721,
+          "final_score": 1.2721
+        },
+        {
+          "sku": "A06GZBSC-BE0.M2R",
+          "series": "Basic Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.768,
+          "final_score": 1.268
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "white polished marble tiles 60x60",
+      "label": "Combined: White Polished Marble 60x60",
+      "base_top3": [
+        {
+          "sku": "A06GZABL-WH0.G0P",
+          "series": "atlantis marble",
+          "category": "marble",
+          "surface": "polished",
+          "color": "white",
+          "base_score": 0.8316
+        },
+        {
+          "sku": "A06GCCAF-WHE.N0X0P",
+          "series": "calacatta africa",
+          "category": "marble",
+          "surface": "polished",
+          "color": "white",
+          "base_score": 0.8316
+        },
+        {
+          "sku": "A06GZBIA-WH0.G0P",
+          "series": "orion bianco",
+          "category": "marble",
+          "surface": "polished",
+          "color": "white",
+          "base_score": 0.8316
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A06GZABL-WH0.G0P",
+          "series": "Atlantis Marble",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "White",
+          "base_score": 0.8316,
+          "final_score": 3.5816
+        },
+        {
+          "sku": "A06GCCAF-WHE.N0X0P",
+          "series": "Calacatta Africa",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "White",
+          "base_score": 0.8316,
+          "final_score": 3.5816
+        },
+        {
+          "sku": "A06GZBIA-WH0.G0P",
+          "series": "Orion Bianco",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "White",
+          "base_score": 0.8316,
+          "final_score": 3.5816
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "grey matte concrete tiles for living room",
+      "label": "Combined: Grey Matte Concrete",
+      "base_top3": [
+        {
+          "sku": "A06GZRCC-CCG.M2R",
+          "series": "revive concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "concrete grey",
+          "base_score": 0.7923
+        },
+        {
+          "sku": "A05GZRCC-CRG.M6X0R",
+          "series": "revive concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "concrete grey",
+          "base_score": 0.7917
+        },
+        {
+          "sku": "A12GZRCC-CCG.M2S5R",
+          "series": "revive concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "concrete grey",
+          "base_score": 0.7869
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A06GZRCC-CCG.M2R",
+          "series": "Revive Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Concrete Grey",
+          "base_score": 0.7923,
+          "final_score": 3.0423
+        },
+        {
+          "sku": "A05GZRCC-CRG.M6X0R",
+          "series": "Revive Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Concrete Grey",
+          "base_score": 0.7917,
+          "final_score": 3.0417
+        },
+        {
+          "sku": "A05GZBSC-GRY.M6X0R",
+          "series": "Basic Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Grey",
+          "base_score": 0.7567,
+          "final_score": 3.0067
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 0.6666666666666666
+      }
+    },
+    {
+      "query": "dark polished marble tiles",
+      "label": "Combined: Dark Polished Marble",
+      "base_top3": [
+        {
+          "sku": "A12GELLM-BLK.N0X5P",
+          "series": "elle marble",
+          "category": "marble",
+          "surface": "polished",
+          "color": "black",
+          "base_score": 0.7438
+        },
+        {
+          "sku": "A12GAMMB-DKG.N0X5P",
+          "series": "amani marble",
+          "category": "marble",
+          "surface": "polished",
+          "color": "dark grey",
+          "base_score": 0.7435
+        },
+        {
+          "sku": "A22GAMMB-DKG.N0X5P",
+          "series": "amani marble",
+          "category": "marble",
+          "surface": "polished",
+          "color": "dark grey",
+          "base_score": 0.7425
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A12GELLM-BLK.N0X5P",
+          "series": "Elle Marble",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Black",
+          "base_score": 0.7438,
+          "final_score": 3.0938
+        },
+        {
+          "sku": "A12GAMMB-DKG.N0X5P",
+          "series": "Amani Marble",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Dark Grey",
+          "base_score": 0.7435,
+          "final_score": 3.0935
+        },
+        {
+          "sku": "A22GAMMB-DKG.N0X5P",
+          "series": "Amani Marble",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Dark Grey",
+          "base_score": 0.7425,
+          "final_score": 3.0925
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 0.6666666666666666
+      }
+    },
+    {
+      "query": "heavy commercial tiles for office lobby",
+      "label": "Usage: Commercial",
+      "base_top3": [
+        {
+          "sku": "A05GLFTC-GRG.MDX0R",
+          "series": "loft concrete decor",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "greige",
+          "base_score": 0.7368
+        },
+        {
+          "sku": "A06GLFTC-IVO.MDX0R",
+          "series": "loft concrete decor",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "ivory",
+          "base_score": 0.7361
+        },
+        {
+          "sku": "A06GLFTC-DKG.MDX0R",
+          "series": "loft concrete decor",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "dark grey",
+          "base_score": 0.7339
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A05GLFTC-GRG.MDX0R",
+          "series": "Loft Concrete Decor",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Greige",
+          "base_score": 0.7368,
+          "final_score": 1.5368
+        },
+        {
+          "sku": "A06GLFTC-IVO.MDX0R",
+          "series": "Loft Concrete Decor",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Ivory",
+          "base_score": 0.7361,
+          "final_score": 1.5361
+        },
+        {
+          "sku": "A06GLOUN-085.U0R",
+          "series": "Lounge",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Ivory",
+          "base_score": 0.7285,
+          "final_score": 1.5285
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 0.6666666666666666
+      }
+    },
+    {
+      "query": "outdoor patio tiles slip resistant",
+      "label": "Usage: Outdoor",
+      "base_top3": [
+        {
+          "sku": "A05GZRCC-PTB.M6X0R",
+          "series": "revive concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "pitch black",
+          "base_score": 0.7056
+        },
+        {
+          "sku": "A05GZSUR-COP.M0X0R",
+          "series": "surface 2.0",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "copper",
+          "base_score": 0.6993
+        },
+        {
+          "sku": "A12GZRCC-PTB.M6X5L",
+          "series": "revive concrete",
+          "category": "concrete",
+          "surface": "lappato",
+          "color": "pitch black",
+          "base_score": 0.6989
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A05GZRCC-PTB.M6X0R",
+          "series": "Revive Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Pitch Black",
+          "base_score": 0.7056,
+          "final_score": 0.7056
+        },
+        {
+          "sku": "A05GZSUR-COP.M0X0R",
+          "series": "Surface 2.0",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Copper",
+          "base_score": 0.6993,
+          "final_score": 0.6993
+        },
+        {
+          "sku": "A12GZRCC-PTB.M6X5L",
+          "series": "Revive Concrete",
+          "category": "Concrete",
+          "surface": "Lappato",
+          "color": "Pitch Black",
+          "base_score": 0.6989,
+          "final_score": 0.6989
+        }
+      ],
+      "metrics": {
+        "base_precision": 0.0,
+        "rerank_precision": 0.0,
+        "base_mrr": 0.0,
+        "rerank_mrr": 0.0,
+        "base_map": 0.0,
+        "rerank_map": 0.0,
+        "diversity": 0.6666666666666666
+      }
+    },
+    {
+      "query": "large format 60x60 tiles",
+      "label": "Size: 60x60",
+      "base_top3": [
+        {
+          "sku": "A06GZBSC-BE0.M2R",
+          "series": "basic concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "beige",
+          "base_score": 0.8015
+        },
+        {
+          "sku": "A06GBCCS-BEE.M6X0R",
+          "series": "basic concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "beige",
+          "base_score": 0.8015
+        },
+        {
+          "sku": "A06GRDIL-BEE.M0X0R",
+          "series": "rhode island",
+          "category": "resin",
+          "surface": "matt",
+          "color": "beige",
+          "base_score": 0.8015
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A06GZBSC-BE0.M2R",
+          "series": "Basic Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.8015,
+          "final_score": 1.2015
+        },
+        {
+          "sku": "A06GBCCS-BEE.M6X0R",
+          "series": "Basic Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.8015,
+          "final_score": 1.2015
+        },
+        {
+          "sku": "A06GRDIL-BEE.M0X0R",
+          "series": "Rhode Island",
+          "category": "Resin",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.8015,
+          "final_score": 1.2015
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 0.6666666666666666
+      }
+    },
+    {
+      "query": "30x60 wall tiles for bathroom",
+      "label": "Size: 30x60",
+      "base_top3": [
+        {
+          "sku": "A09GZDCC-WH0.M2R",
+          "series": "design concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "white",
+          "base_score": 0.7931
+        },
+        {
+          "sku": "A09GCYSE-WHE.A6X0R",
+          "series": "clay stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "white",
+          "base_score": 0.7931
+        },
+        {
+          "sku": "A09GKSON-WHE.A6X0R",
+          "series": "k2 stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "white",
+          "base_score": 0.7931
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A09GZDCC-WH0.M2R",
+          "series": "Design Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "White",
+          "base_score": 0.7931,
+          "final_score": 1.1931
+        },
+        {
+          "sku": "A09GCYSE-WHE.A6X0R",
+          "series": "Clay Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "White",
+          "base_score": 0.7931,
+          "final_score": 1.1931
+        },
+        {
+          "sku": "A09GKSON-WHE.A6X0R",
+          "series": "K2 Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "White",
+          "base_score": 0.7931,
+          "final_score": 1.1931
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "something luxurious and elegant for master bedroom",
+      "label": "NL: Luxurious / Elegant",
+      "base_top3": [
+        {
+          "sku": "A05GCCAF-CTA.N0X0P",
+          "series": "calacatta africa",
+          "category": "marble",
+          "surface": "polished",
+          "color": "calacatta",
+          "base_score": 0.6525
+        },
+        {
+          "sku": "A22GZNTV-IVO.N0X5P",
+          "series": "new travertino",
+          "category": "stone",
+          "surface": "polished",
+          "color": "ivory",
+          "base_score": 0.6464
+        },
+        {
+          "sku": "A05GASHA-BEE.M0X0R",
+          "series": "ashtra",
+          "category": "stone",
+          "surface": "matt",
+          "color": "beige",
+          "base_score": 0.645
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A05GCCAF-CTA.N0X0P",
+          "series": "Calacatta Africa",
+          "category": "Marble",
+          "surface": "Polished",
+          "color": "Calacatta",
+          "base_score": 0.6525,
+          "final_score": 0.6525
+        },
+        {
+          "sku": "A22GZNTV-IVO.N0X5P",
+          "series": "New Travertino",
+          "category": "Stone",
+          "surface": "Polished",
+          "color": "Ivory",
+          "base_score": 0.6464,
+          "final_score": 0.6464
+        },
+        {
+          "sku": "A05GASHA-BEE.M0X0R",
+          "series": "Ashtra",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.645,
+          "final_score": 0.645
+        }
+      ],
+      "metrics": {
+        "base_precision": 0.3333333333333333,
+        "rerank_precision": 0.3333333333333333,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 0.3333333333333333,
+        "rerank_map": 0.3333333333333333,
+        "diversity": 1.0
+      }
+    },
+    {
+      "query": "minimalist modern look for open plan living",
+      "label": "NL: Minimalist Modern (no hard constraint)",
+      "base_top3": [
+        {
+          "sku": "A22GZCRR-HWH.M0X5R",
+          "series": "carara",
+          "category": "marble",
+          "surface": "matt",
+          "color": "hyper white",
+          "base_score": 0.6562
+        },
+        {
+          "sku": "A22GMLST-WHE.M0X5R",
+          "series": "milano stone",
+          "category": "stone",
+          "surface": "matt",
+          "color": "white",
+          "base_score": 0.6551
+        },
+        {
+          "sku": "A05GRIOC-WHE.M6X0R",
+          "series": "calacatta rio",
+          "category": "marble",
+          "surface": "matt",
+          "color": "white",
+          "base_score": 0.6502
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A05GLFTC-LBE.M6X0R",
+          "series": "Loft Concrete",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Light Beige",
+          "base_score": 0.6455,
+          "final_score": 1.1455
+        },
+        {
+          "sku": "A22GZSFX-SND.M0X5R",
+          "series": "Surface 2.0",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Sand",
+          "base_score": 0.6454,
+          "final_score": 0.9454
+        },
+        {
+          "sku": "A05GZSUR-CGY.M0X0R",
+          "series": "Surface 2.0",
+          "category": "Concrete",
+          "surface": "Matt",
+          "color": "Cool Grey",
+          "base_score": 0.6452,
+          "final_score": 0.9452
+        }
+      ],
+      "metrics": {
+        "base_precision": 1.0,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 1.0,
+        "rerank_map": 1.0,
+        "diversity": 0.6666666666666666
+      }
+    },
+    {
+      "query": "tiles that look like natural stone for garden",
+      "label": "NL: Natural Stone Garden",
+      "base_top3": [
+        {
+          "sku": "A12GRTOE-NUR.Y6X7R",
+          "series": "rak stone 2.0",
+          "category": "stone",
+          "surface": "matt",
+          "color": "natural",
+          "base_score": 0.6903
+        },
+        {
+          "sku": "A92GAMZW#NAT.M0X5R",
+          "series": "amazonia wood",
+          "category": "wood",
+          "surface": "matt",
+          "color": "natural",
+          "base_score": 0.6836
+        },
+        {
+          "sku": "A05GZRCC-PTB.M6X0R",
+          "series": "revive concrete",
+          "category": "concrete",
+          "surface": "matt",
+          "color": "pitch black",
+          "base_score": 0.6824
+        }
+      ],
+      "reranked_top3": [
+        {
+          "sku": "A12GRTOE-NUR.Y6X7R",
+          "series": "RAK Stone 2.0",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Natural",
+          "base_score": 0.6903,
+          "final_score": 2.6903
+        },
+        {
+          "sku": "A06GLPSE-OGL.M6X0R",
+          "series": "Lapideus Stone",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Original",
+          "base_score": 0.6736,
+          "final_score": 2.4236
+        },
+        {
+          "sku": "A05GASHA-BEE.M0X0R",
+          "series": "Ashtra",
+          "category": "Stone",
+          "surface": "Matt",
+          "color": "Beige",
+          "base_score": 0.6696,
+          "final_score": 2.4196
+        }
+      ],
+      "metrics": {
+        "base_precision": 0.3333333333333333,
+        "rerank_precision": 1.0,
+        "base_mrr": 1.0,
+        "rerank_mrr": 1.0,
+        "base_map": 0.3333333333333333,
+        "rerank_map": 1.0,
+        "diversity": 1.0
+      }
+    }
+  ]
+}
