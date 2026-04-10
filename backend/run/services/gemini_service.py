@@ -135,6 +135,43 @@ RAK Ceramics delivers sustainable, design-forward ceramic solutions that inspire
 architects, designers, and homeowners worldwide.
 """
 
+def requires_product_search(user_query: str, history: list = []) -> bool:
+    """
+    Analyzes the user's query and conversation history to determine 
+    if a product database search is necessary.
+    """
+    try:
+        history_text = ""
+        if history:
+            history_text = "\nPrevious Conversation:\n"
+            for msg in history[-5:]:
+                role = "User" if msg.get("role") == "user" else "Assistant"
+                history_text += f"{role}: {msg.get('text', '')}\n"
+
+        prompt = f"""
+You are an intent classifier for a tile and ceramics sales chatbot.
+Does the following user query require searching the product database to find specific tiles, ceramics, sanitary ware, or product details?
+If the user is just saying hello, asking a general question, or clarifying something without asking for products, respond NO.
+If the user is asking for product recommendations, specifications, colors, sizes, or anything related to catalog items, respond YES.
+
+Respond with ONLY "YES" or "NO".
+
+{history_text}
+Current Query: {user_query}
+Answer (YES/NO):"""
+
+        response = model.generate_content(prompt)
+        text = ""
+        if hasattr(response, "text") and response.text:
+            text = response.text.strip().upper()
+        elif hasattr(response, "candidates") and response.candidates:
+            text = response.candidates[0].content.parts[0].text.strip().upper()
+            
+        return "YES" in text
+    except Exception as e:
+        print("Intent Classification Error:", str(e))
+        return True  # Default to searching if there's an error
+
 
 def generate_tile_response(user_query: str, tile_results: list, history: list = []):
     try:

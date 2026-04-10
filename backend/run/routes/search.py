@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 from run.services.product_search_service import search_tiles
-from run.services.gemini_service import generate_tile_response
+from run.services.gemini_service import generate_tile_response, requires_product_search
 
 router = APIRouter()
 
@@ -13,11 +13,15 @@ class SearchRequest(BaseModel):
 @router.post("/search")
 def search_products(request: SearchRequest):
     try:
-        # 1. Execute the vector search and re-ranking
-        results = search_tiles(
-            user_query=request.query,
-            n_results=request.n_results
-        )
+        results = []
+        
+        # Smartly determine if a product search is needed for this query
+        if requires_product_search(user_query=request.query, history=request.history):
+            # 1. Execute the vector search and re-ranking
+            results = search_tiles(
+                user_query=request.query,
+                n_results=request.n_results
+            )
 
         # 2. Generate the AI sales assistant response using Gemini 2.5 Flash
         ai_response = generate_tile_response(
@@ -36,4 +40,4 @@ def search_products(request: SearchRequest):
     except Exception as e:
         # Log internally but do not expose raw exception details to the client
         print(f"[ERROR] /api/search failed: {str(e)}")
-        raise HTTPException(status_code=500, detail="An internal error occurred. Please try again later.")
+        raise HTTPException(status_code=500, detail="An internal error occurred. Please try again later.")
