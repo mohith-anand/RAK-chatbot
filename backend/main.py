@@ -38,3 +38,7 @@ app.mount("/images", StaticFiles(directory=image_dir), name="images")
 @app.get("/")
 async def root():
     return {"message": "RAK Tiles API is online"}
+
+@app.get("/api/health")
+async def health_check():
+    return {"status": "healthy"}
